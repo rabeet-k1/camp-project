@@ -1,0 +1,35 @@
+<%- include("./partials/header") %>
+
+	<div class="card bg-light">
+		<article class="card-body mx-auto" style="max-width: 400px;">
+			<h1 class="card-title mt-3 text-center">Login</h1>
+			<form action="/login" method="POST">
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-user"></i>
+						</span>
+					</div>
+					<input name="username" class="form-control" placeholder="Username" type="text">
+				</div>
+				<!-- form-group// -->
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-lock"></i>
+						</span>
+					</div>
+					<input class="form-control" name="password" placeholder="Password" type="password">
+				</div>
+				<!-- form-group// -->
+				<div class="form-group">
+					<button class="btn btn-primary btn-lg btn-block">Login!</button>
+					<a href= "/forgot">Forgot Password?</a>
+				</div>
+				<!-- form-group// -->
+			</form>
+			<a href="/campgrounds">Go Back</a>
+		</article>
+	</div>
+
+	<%- include("./partials/footer") %>

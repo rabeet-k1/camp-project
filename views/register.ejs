@@ -1,0 +1,79 @@
+<%- include("./partials/header") %>
+
+	<div class="card bg-light">
+		<article class="card-body mx-auto" style="max-width: 400px;">
+			<h1 class="card-title mt-3 text-center">Sign Up</h1>
+			<form action="/register" method="POST">
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-users"></i>
+						</span>
+					</div>
+					<input name="username" class="form-control" placeholder="Username" type="text">
+				</div>
+				<!-- form-group// -->
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-paper-plane"></i>
+						</span>
+					</div>
+					<input name="email" class="form-control" placeholder="Email" type="email">
+				</div>
+				<!-- form-group// -->
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-lock"></i>
+						</span>
+					</div>
+					<input class="form-control" name="password" placeholder="Password" type="password">
+				</div>
+				<!-- form-group// -->
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-users"></i>
+						</span>
+					</div>
+					<input name="firstName" class="form-control" placeholder="First Name" type="text">
+				</div>
+				<!-- form-group// -->
+			<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-users"></i>
+						</span>
+					</div>
+					<input name="lastName" class="form-control" placeholder="Last Name" type="text">
+				</div>
+				<!-- form-group// -->
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-camera-retro"></i>
+						</span>
+					</div>
+					<input name="avatar" class="form-control" placeholder="Avatar Url" type="text">
+				</div>
+				<!-- form-group// -->
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-user"></i>
+						</span>
+					</div>
+					<input name="adminCode" class="form-control" placeholder="Admin Code" type="text">
+				</div>
+				<!-- form-group// -->
+				<div class="form-group">
+					<button class="btn btn-primary btn-lg btn-block">Sign Up!</button>
+				</div>
+				<!-- form-group// -->
+			</form>
+			<a href="/campgrounds">Go Back</a>
+		</article>
+	</div>
+
+	<%- include("./partials/footer") %>
